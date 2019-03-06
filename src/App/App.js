@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import SimpleAppBar from './Navbar';
-import theme from './theme'
-import Home from './Home'
+import SimpleAppBar from '../Navbar/Navbar';
+import theme from '../theme'
+import Home from '../Home/Home'
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({

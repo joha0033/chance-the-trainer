@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import HowToList from './HowToList'
 import GetStartedButton from './GetStartedButton';
+import withWidth from '@material-ui/core/withWidth';
 
 const styles = theme => ({
   root: {
@@ -12,21 +13,21 @@ const styles = theme => ({
     marginBottom: 30,
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    textAlign: 'center'
+    textAlign: 'center',
   }
 });
 
 function Home(props) {
-  const { classes } = props;
+  const { classes, width } = props;
+  const elevation = width === 'xs' ? 0 : 5
+  
   return (
-    <div>
-      <Paper  className={classes.root} elevation={5}>
-        <Typography variant="h5" component="h4" >
-          <HowToList />
-          <GetStartedButton />
-        </Typography>
-      </Paper>
-    </div>
+        <Paper  className={classes.root} elevation={elevation}>
+          <Typography component="h4" >
+            <HowToList />
+            <GetStartedButton />
+          </Typography>
+        </Paper>
   );
 }
 
@@ -34,4 +35,4 @@ Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(withWidth()(Home));
