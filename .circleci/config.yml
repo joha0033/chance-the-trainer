@@ -7,7 +7,7 @@ jobs:
   test:
     docker:
       - image: circleci/node:7.10
-    working_directory: ~/repo/tree/tests
+    working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
