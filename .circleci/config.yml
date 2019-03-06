@@ -43,7 +43,7 @@ workflows:
         filters:
             branches:
               only: tests
-    test-build:
+  test-build:
     jobs:
     - test
     - build:
