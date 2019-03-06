@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -11,6 +11,7 @@ const styles = theme => ({
       },
     button: {
         color: 'white',
+        width: '160px'
     },
     icon:{
         paddingRight: 10
@@ -18,30 +19,37 @@ const styles = theme => ({
   
 });
 
-const handleClick = (setIsDemoDisplayed) => {
-    return setIsDemoDisplayed()
-}
+
 
 
 const DemoButton = (props) => {
-  const { classes, setIsDemoDisplayed } = props;
-  return (
-    <div className='ProgressBar'>
-        <div >
-            <Button 
-                aria-label="Demo" 
-                className={classes.button}
-                onClick={() => handleClick(setIsDemoDisplayed)}
-                // style={{padding: progressUsed * 1}}
-            >
-            <i className={"material-icons " + classes.icon}>
-            burst_mode
-            </i>
-                demo
-            </Button>
+    const { classes } = props;
+    const [isDemoDisplayed, setIsDemoDisplayed] = useState(false)
+
+    const handleClick = () => {
+        setIsDemoDisplayed(!isDemoDisplayed)
+    }
+
+    return (
+        <div className='ProgressBar'>
+            <div >
+                <label>
+                    <Button 
+                        aria-label="Demo" 
+                        className={classes.button}
+                        onClick={() => handleClick()}
+                    >
+                        <i className={"material-icons " + classes.icon}>
+                            burst_mode
+                        </i>
+                        {isDemoDisplayed ? 'Hide Demo' : 'Show Demo'}
+                    </Button>
+                    
+                </label>
+                
+            </div>
         </div>
-      </div>
-  );
+    );
 }
 
 DemoButton.propTypes = {

@@ -10,11 +10,29 @@ import DemoButton from './DemoButton';
 const styles = theme => ({
     root: {
         flexGrow: 1,
-    }
+    },
+    demoButton: {
+      [theme.breakpoints.down('xs')]: {
+        display: 'none',
+      },
+    },
+    nameSmall: {
+      display: 'none',
+      [theme.breakpoints.down('xs')]: {
+        display: 'block',
+        textAlign: 'center'
+      },
+    },
+    nameLarge: {
+      display: 'block',
+      [theme.breakpoints.down('xs')]: {
+        display: 'none'
+      },
+    },
   });
 
 function SimpleAppBar(props) {
-  const { classes, setIsDemoDisplayed } = props;
+  const { classes } = props;
 
   return (
     <div className={classes.root}>
@@ -22,18 +40,26 @@ function SimpleAppBar(props) {
         <Toolbar>
             <Grid container spacing={0}>
                 <Grid item xs={12}>
-                    <Typography variant="h4" color="inherit">
+                    <Typography variant="h4" color="inherit" className={classes.nameLarge}>
                         Chance The Trainer
+                    </Typography>
+                    <Typography variant="subtitle2" color="inherit" className={classes.nameSmall}>
+                        Chance The Trainer sm
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography variant="h6" color="inherit">
+                    <Typography variant="h6" color="inherit" className={classes.nameLarge}>
                         by: ajDevs
+                    </Typography>
+                    <Typography variant="caption" color="inherit" className={classes.nameSmall}>
+                        by: ajDevs sm
                     </Typography>
                 </Grid>
             </Grid>
-            <DemoButton 
-              setIsDemoDisplayed={setIsDemoDisplayed}/>
+            <div className={classes.demoButton}>
+              <DemoButton />
+            </ div>
+           
         </Toolbar>
       </AppBar>
     </div>

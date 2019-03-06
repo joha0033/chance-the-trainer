@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders entire Home component correctly 1`] = `
+<div
+  className="MuiPaper-root-222 MuiPaper-elevation5-229 MuiPaper-rounded-223 WithTheme-WithWidth-Home---root-221"
+>
+  <h4
+    className="MuiTypography-root-249 MuiTypography-body1-258"
+  >
+    <div
+      className="HowToList-root-285"
+    >
+      <nav
+        className="MuiList-root-286 MuiList-padding-287"
+      >
+        <h3>
+          How this works
+        </h3>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+               This is an app that helps with Public Speaking.
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Its a random slide show generator
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              3 slides (photos) // 30 seconds a piece
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Start a speech inspired by the photo displayed
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Relate your points from previous slide with the next
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Tie your points together with the last slide
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Click the get started button
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+          disabled={false}
+          href="#simple-list"
+        >
+          <div
+            className="MuiListItemText-root-302"
+          >
+            <span
+              className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+            >
+              Once directed to Slideshow, press the play button
+            </span>
+          </div>
+        </li>
+      </nav>
+    </div>
+    <div>
+      <button
+        className="MuiButtonBase-root-335 MuiButton-root-309 MuiButton-contained-320 MuiButton-containedPrimary-321 MuiButton-raised-323 MuiButton-raisedPrimary-324 GetStartedButton-button-308"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-310"
+        >
+          Get Started
+        </span>
+        <span
+          className="MuiTouchRipple-root-338"
+        />
+      </button>
+    </div>
+  </h4>
+</div>
+`;
+
+exports[`renders get started button correctly 1`] = `
+<div>
+  <button
+    className="MuiButtonBase-root-335 MuiButton-root-309 MuiButton-contained-320 MuiButton-containedPrimary-321 MuiButton-raised-323 MuiButton-raisedPrimary-324 GetStartedButton-button-308"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-310"
+    >
+      Get Started
+    </span>
+    <span
+      className="MuiTouchRipple-root-338"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders how to list correctly 1`] = `
+<div
+  className="HowToList-root-285"
+>
+  <nav
+    className="MuiList-root-286 MuiList-padding-287"
+  >
+    <h3>
+      How this works
+    </h3>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+           This is an app that helps with Public Speaking.
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Its a random slide show generator
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          3 slides (photos) // 30 seconds a piece
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Start a speech inspired by the photo displayed
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Relate your points from previous slide with the next
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Tie your points together with the last slide
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Click the get started button
+        </span>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root-290 MuiListItem-default-293 MuiListItem-gutters-298"
+      disabled={false}
+      href="#simple-list"
+    >
+      <div
+        className="MuiListItemText-root-302"
+      >
+        <span
+          className="MuiTypography-root-249 MuiTypography-subheading-256 MuiListItemText-primary-305"
+        >
+          Once directed to Slideshow, press the play button
+        </span>
+      </div>
+    </li>
+  </nav>
+</div>
+`;

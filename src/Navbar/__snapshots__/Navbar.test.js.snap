@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Navbar component correctly 1`] = `
+<div
+  className="SimpleAppBar-root-256"
+>
+  <header
+    className="MuiPaper-root-269 MuiPaper-elevation4-275 MuiAppBar-root-260 MuiAppBar-positionStatic-264 MuiAppBar-colorPrimary-267"
+  >
+    <div
+      className="MuiToolbar-root-296 MuiToolbar-regular-298 MuiToolbar-gutters-297"
+    >
+      <div
+        className="MuiGrid-container-300"
+      >
+        <div
+          className="MuiGrid-item-301 MuiGrid-grid-xs-12-340"
+        >
+          <h4
+            className="MuiTypography-root-397 MuiTypography-h4-412 MuiTypography-colorInherit-426 SimpleAppBar-nameLarge-259"
+          >
+            Chance The Trainer
+          </h4>
+          <h6
+            className="MuiTypography-root-397 MuiTypography-subtitle2-416 MuiTypography-colorInherit-426 SimpleAppBar-nameSmall-258"
+          >
+            Chance The Trainer sm
+          </h6>
+        </div>
+        <div
+          className="MuiGrid-item-301 MuiGrid-grid-xs-12-340"
+        >
+          <h6
+            className="MuiTypography-root-397 MuiTypography-h6-414 MuiTypography-colorInherit-426 SimpleAppBar-nameLarge-259"
+          >
+            by: ajDevs
+          </h6>
+          <span
+            className="MuiTypography-root-397 MuiTypography-caption-407 MuiTypography-colorInherit-426 SimpleAppBar-nameSmall-258"
+          >
+            by: ajDevs sm
+          </span>
+        </div>
+      </div>
+      <div
+        className="SimpleAppBar-demoButton-257"
+      >
+        <div
+          className="ProgressBar"
+        >
+          <div>
+            <label>
+              <button
+                aria-label="Demo"
+                className="MuiButtonBase-root-462 MuiButton-root-436 MuiButton-text-438 MuiButton-flat-441 DemoButton-button-434"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-437"
+                >
+                  <i
+                    className="material-icons DemoButton-icon-435"
+                  >
+                    burst_mode
+                  </i>
+                  Show Demo
+                </span>
+                <span
+                  className="MuiTouchRipple-root-465"
+                />
+              </button>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`renders demo button correctly 1`] = `
+<div
+  className="ProgressBar"
+>
+  <div>
+    <label>
+      <button
+        aria-label="Demo"
+        className="MuiButtonBase-root-462 MuiButton-root-436 MuiButton-text-438 MuiButton-flat-441 DemoButton-button-434"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-437"
+        >
+          <i
+            className="material-icons DemoButton-icon-435"
+          >
+            burst_mode
+          </i>
+          Show Demo
+        </span>
+        <span
+          className="MuiTouchRipple-root-465"
+        />
+      </button>
+    </label>
+  </div>
+</div>
+`;
