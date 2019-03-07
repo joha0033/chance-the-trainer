@@ -30,7 +30,9 @@ const styles = theme => ({
         display: 'none'
       },
     },
-    link: { textDecoration: 'none', color: 'white' 
+    link: { 
+      textDecoration: 'none', 
+      color: 'white' 
     },
   });
 

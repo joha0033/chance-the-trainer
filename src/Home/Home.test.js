@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import {render, fireEvent, cleanup, text} from 'react-testing-library';
-// import router
+import { MemoryRouter } from 'react-router-dom'
 import Home from './Home';
 import HowToList from './HowToList'
 import GetStartedButton from './GetStartedButton'
@@ -20,13 +20,19 @@ import GetStartedButton from './GetStartedButton'
   */
 it('renders Home component without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Home />, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
 it('renders get started button without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<GetStartedButton />, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <GetStartedButton />
+    </MemoryRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
@@ -45,7 +51,9 @@ it('renders how to list without crashing', () => {
  */
 it('renders entire Home component correctly', () => {
   const tree = renderer
-    .create(<Home />)
+    .create(<MemoryRouter>
+        <Home />
+      </MemoryRouter>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -61,7 +69,11 @@ it('renders how to list correctly', () => {
 // GET STARTED BUTTON
 it('renders get started button correctly', () => {
   const tree = renderer
-    .create(<GetStartedButton />)
+    .create(
+    <MemoryRouter>
+      <GetStartedButton />
+    </MemoryRouter>
+      )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -87,10 +99,17 @@ it('renders get started button correctly', () => {
     width: 'sm'
    }
   const componentLarge = renderer
-    .create(<Home  {...propsSM} />)
+    .create(
+    <MemoryRouter>
+        <Home  {...propsSM} />
+    </MemoryRouter>)
     .toJSON()
   const componentSmall = renderer
-    .create(<Home  {...propXS} />)
+    .create(
+    <MemoryRouter>
+       <Home  {...propXS} />
+    </MemoryRouter>
+     )
     .toJSON()
     
   expect(componentSmall.children[0].props.className.includes('MuiPaper-elevation0-224')).toBeTruthy();
