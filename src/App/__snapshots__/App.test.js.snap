@@ -5,89 +5,50 @@ exports[`renders correctly 1`] = `
   className="App"
 >
   <div
-    className="SimpleAppBar-root-248"
+    className="SimpleAppBar-root-246"
   >
     <header
-      className="MuiPaper-root-261 MuiPaper-elevation4-267 MuiAppBar-root-252 MuiAppBar-positionStatic-256 MuiAppBar-colorPrimary-259"
+      className="MuiPaper-root-260 MuiPaper-elevation4-266 MuiAppBar-root-251 MuiAppBar-positionStatic-255 MuiAppBar-colorPrimary-258"
     >
       <div
-        className="MuiToolbar-root-288 MuiToolbar-regular-290 MuiToolbar-gutters-289"
+        className="MuiToolbar-root-287 MuiToolbar-regular-289 MuiToolbar-gutters-288"
       >
         <div
-          className="MuiGrid-container-292"
+          className="MuiGrid-container-291"
         >
           <div
-            className="MuiGrid-item-293 MuiGrid-grid-xs-12-332"
+            className="MuiGrid-item-292 MuiGrid-grid-xs-12-331"
           >
-            <h4
-              className="MuiTypography-root-389 MuiTypography-h4-404 MuiTypography-colorInherit-418 SimpleAppBar-nameLarge-251"
+            <a
+              className="SimpleAppBar-link-250"
+              href="/"
+              onClick={[Function]}
             >
-              Chance The Trainer
-            </h4>
-            <h6
-              className="MuiTypography-root-389 MuiTypography-subtitle2-408 MuiTypography-colorInherit-418 SimpleAppBar-nameSmall-250"
-            >
-              Chance The Trainer sm
-            </h6>
+              <h4
+                className="MuiTypography-root-388 MuiTypography-h4-403 MuiTypography-colorInherit-417 SimpleAppBar-nameLarge-249"
+              >
+                Chance The Trainer
+              </h4>
+              <h6
+                className="MuiTypography-root-388 MuiTypography-subtitle2-407 MuiTypography-colorInherit-417 SimpleAppBar-nameSmall-248"
+              >
+                Chance The Trainer sm
+              </h6>
+            </a>
           </div>
           <div
-            className="MuiGrid-item-293 MuiGrid-grid-xs-12-332"
+            className="MuiGrid-item-292 MuiGrid-grid-xs-12-331"
           >
             <h6
-              className="MuiTypography-root-389 MuiTypography-h6-406 MuiTypography-colorInherit-418 SimpleAppBar-nameLarge-251"
+              className="MuiTypography-root-388 MuiTypography-h6-405 MuiTypography-colorInherit-417 SimpleAppBar-nameLarge-249"
             >
               by: ajDevs
             </h6>
             <span
-              className="MuiTypography-root-389 MuiTypography-caption-399 MuiTypography-colorInherit-418 SimpleAppBar-nameSmall-250"
+              className="MuiTypography-root-388 MuiTypography-caption-398 MuiTypography-colorInherit-417 SimpleAppBar-nameSmall-248"
             >
               by: ajDevs sm
             </span>
-          </div>
-        </div>
-        <div
-          className="SimpleAppBar-demoButton-249"
-        >
-          <div
-            className="ProgressBar"
-          >
-            <div>
-              <label>
-                <button
-                  aria-label="Demo"
-                  className="MuiButtonBase-root-454 MuiButton-root-428 MuiButton-text-430 MuiButton-flat-433 DemoButton-button-426"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
-                >
-                  <span
-                    className="MuiButton-label-429"
-                  >
-                    <i
-                      className="material-icons DemoButton-icon-427"
-                    >
-                      burst_mode
-                    </i>
-                    Show Demo
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-458"
-                  />
-                </button>
-              </label>
-            </div>
           </div>
         </div>
       </div>
@@ -99,134 +60,134 @@ exports[`renders correctly 1`] = `
     <br />
     <div>
       <div
-        className="MuiPaper-root-261 MuiPaper-elevation5-268 MuiPaper-rounded-262 WithTheme-WithWidth-Home---root-457"
+        className="MuiPaper-root-260 MuiPaper-elevation5-267 MuiPaper-rounded-261 WithTheme-WithWidth-Home---root-424"
       >
         <h4
-          className="MuiTypography-root-389 MuiTypography-body2-397"
+          className="MuiTypography-root-388 MuiTypography-body2-396"
         >
           <div
-            className="HowToList-root-465"
+            className="HowToList-root-425"
           >
             <nav
-              className="MuiList-root-466 MuiList-padding-467"
+              className="MuiList-root-426 MuiList-padding-427"
             >
               <h3>
                 How this works
               </h3>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                      This is an app that helps with Public Speaking.
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Its a random slide show generator
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     3 slides (photos) // 30 seconds a piece
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Start a speech inspired by the photo displayed
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Relate your points from previous slide with the next
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Tie your points together with the last slide
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Click the get started button
                   </span>
                 </div>
               </li>
               <li
-                className="MuiListItem-root-470 MuiListItem-default-473 MuiListItem-gutters-478"
+                className="MuiListItem-root-430 MuiListItem-default-433 MuiListItem-gutters-438"
                 disabled={false}
                 href="#simple-list"
               >
                 <div
-                  className="MuiListItemText-root-482"
+                  className="MuiListItemText-root-442"
                 >
                   <span
-                    className="MuiTypography-root-389 MuiTypography-body1-398 MuiListItemText-primary-485"
+                    className="MuiTypography-root-388 MuiTypography-body1-397 MuiListItemText-primary-445"
                   >
                     Once directed to Slideshow, press the play button
                   </span>
@@ -240,7 +201,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
             >
               <button
-                className="MuiButtonBase-root-454 MuiButton-root-428 MuiButton-contained-439 MuiButton-containedPrimary-440 MuiButton-raised-442 MuiButton-raisedPrimary-443 GetStartedButton-button-488"
+                className="MuiButtonBase-root-475 MuiButton-root-449 MuiButton-contained-460 MuiButton-containedPrimary-461 MuiButton-raised-463 MuiButton-raisedPrimary-464 GetStartedButton-button-448"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -257,12 +218,12 @@ exports[`renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-429"
+                  className="MuiButton-label-450"
                 >
                   Get Started
                 </span>
                 <span
-                  className="MuiTouchRipple-root-458"
+                  className="MuiTouchRipple-root-478"
                 />
               </button>
             </a>

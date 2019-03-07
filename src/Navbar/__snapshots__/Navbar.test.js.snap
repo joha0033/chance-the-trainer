@@ -2,89 +2,50 @@
 
 exports[`renders Navbar component correctly 1`] = `
 <div
-  className="SimpleAppBar-root-256"
+  className="SimpleAppBar-root-182"
 >
   <header
-    className="MuiPaper-root-269 MuiPaper-elevation4-275 MuiAppBar-root-260 MuiAppBar-positionStatic-264 MuiAppBar-colorPrimary-267"
+    className="MuiPaper-root-196 MuiPaper-elevation4-202 MuiAppBar-root-187 MuiAppBar-positionStatic-191 MuiAppBar-colorPrimary-194"
   >
     <div
-      className="MuiToolbar-root-296 MuiToolbar-regular-298 MuiToolbar-gutters-297"
+      className="MuiToolbar-root-223 MuiToolbar-regular-225 MuiToolbar-gutters-224"
     >
       <div
-        className="MuiGrid-container-300"
+        className="MuiGrid-container-227"
       >
         <div
-          className="MuiGrid-item-301 MuiGrid-grid-xs-12-340"
+          className="MuiGrid-item-228 MuiGrid-grid-xs-12-267"
         >
-          <h4
-            className="MuiTypography-root-397 MuiTypography-h4-412 MuiTypography-colorInherit-426 SimpleAppBar-nameLarge-259"
+          <a
+            className="SimpleAppBar-link-186"
+            href="/"
+            onClick={[Function]}
           >
-            Chance The Trainer
-          </h4>
-          <h6
-            className="MuiTypography-root-397 MuiTypography-subtitle2-416 MuiTypography-colorInherit-426 SimpleAppBar-nameSmall-258"
-          >
-            Chance The Trainer sm
-          </h6>
+            <h4
+              className="MuiTypography-root-324 MuiTypography-h4-339 MuiTypography-colorInherit-353 SimpleAppBar-nameLarge-185"
+            >
+              Chance The Trainer
+            </h4>
+            <h6
+              className="MuiTypography-root-324 MuiTypography-subtitle2-343 MuiTypography-colorInherit-353 SimpleAppBar-nameSmall-184"
+            >
+              Chance The Trainer sm
+            </h6>
+          </a>
         </div>
         <div
-          className="MuiGrid-item-301 MuiGrid-grid-xs-12-340"
+          className="MuiGrid-item-228 MuiGrid-grid-xs-12-267"
         >
           <h6
-            className="MuiTypography-root-397 MuiTypography-h6-414 MuiTypography-colorInherit-426 SimpleAppBar-nameLarge-259"
+            className="MuiTypography-root-324 MuiTypography-h6-341 MuiTypography-colorInherit-353 SimpleAppBar-nameLarge-185"
           >
             by: ajDevs
           </h6>
           <span
-            className="MuiTypography-root-397 MuiTypography-caption-407 MuiTypography-colorInherit-426 SimpleAppBar-nameSmall-258"
+            className="MuiTypography-root-324 MuiTypography-caption-334 MuiTypography-colorInherit-353 SimpleAppBar-nameSmall-184"
           >
             by: ajDevs sm
           </span>
-        </div>
-      </div>
-      <div
-        className="SimpleAppBar-demoButton-257"
-      >
-        <div
-          className="ProgressBar"
-        >
-          <div>
-            <label>
-              <button
-                aria-label="Demo"
-                className="MuiButtonBase-root-462 MuiButton-root-436 MuiButton-text-438 MuiButton-flat-441 DemoButton-button-434"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label-437"
-                >
-                  <i
-                    className="material-icons DemoButton-icon-435"
-                  >
-                    burst_mode
-                  </i>
-                  Show Demo
-                </span>
-                <span
-                  className="MuiTouchRipple-root-465"
-                />
-              </button>
-            </label>
-          </div>
         </div>
       </div>
     </div>
@@ -97,41 +58,7 @@ exports[`renders demo button correctly 1`] = `
   className="ProgressBar"
 >
   <div>
-    <label>
-      <button
-        aria-label="Demo"
-        className="MuiButtonBase-root-462 MuiButton-root-436 MuiButton-text-438 MuiButton-flat-441 DemoButton-button-434"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onContextMenu={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        <span
-          className="MuiButton-label-437"
-        >
-          <i
-            className="material-icons DemoButton-icon-435"
-          >
-            burst_mode
-          </i>
-          Show Demo
-        </span>
-        <span
-          className="MuiTouchRipple-root-465"
-        />
-      </button>
-    </label>
+    <label />
   </div>
 </div>
 `;
