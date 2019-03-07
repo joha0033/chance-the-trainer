@@ -1,7 +1,7 @@
 import React, {
     useState, useEffect, useReducer, useRef, useLayoutEffect,
   } from 'react';
-  import './App.css';
+  import './Slideshow.css';
   import PropTypes from 'prop-types';
   import {
     FaPlay,
@@ -27,6 +27,7 @@ import React, {
   
     return (
       <li
+        id={'slide'}
         ref={ref}
         aria-hidden={!isCurrent}
         tabIndex='-1'
@@ -37,7 +38,7 @@ import React, {
   }
   
   Slide.propTypes = {
-    isCurrent: PropTypes.bool.isRequired,
+    // isCurrent: PropTypes.bool.isRequired,
     takeFocus: PropTypes.bool.isRequired,
     slide: PropTypes.shape({
       url: PropTypes.string,
@@ -52,7 +53,7 @@ import React, {
   
   export function Carousel(props) {
     return (
-      <section className='Carousel' {...props} />
+      <section id={'carousel'} className='Carousel' {...props} />
     );
   }
   
@@ -72,7 +73,7 @@ import React, {
   }
   
   SlideNavItem.propTypes = {
-    isCurrent: PropTypes.bool.isRequired,
+    // isCurrent: PropTypes.bool.isRequired,
   };
   
   export function IconButton(props) {
@@ -81,10 +82,7 @@ import React, {
       ? <button type='button' className='IconButtonLarge' {...props} />
       : <button type='button' className='IconButton' {...props} />;
   }
-  
-  IconButton.propTypes = {
-    name: PropTypes.string.isRequired,
-  };
+
   
   export function SpacerGif({ width }) {
     return (
@@ -118,7 +116,6 @@ import React, {
   
       return () => cancelAnimationFrame(rafId);
     }, [time, animate]);
-    console.log('shit?');
   
     return animate
       ? Math.min(progress / time, time)
@@ -127,10 +124,12 @@ import React, {
   
   export function ProgressBar({ animate, time }) {
     const progressUsed = useProgress(animate, time);
-  
+  console.log(progressUsed, 'what is this??');
+    
     return (
       <div className='ProgressBar'>
         <div
+          className={'ProgressBarContainer'}
           style={{ width: `${progressUsed * 100}%` }}
         />
       </div>
@@ -146,37 +145,43 @@ import React, {
   const Loading = ({ slides }) => (slides
     ? (<h1 className='Loading'>Loading...</h1>)
     : (<h1 className='Loading'>Thanks for Visiting!</h1>));
+  // let escPressed = document.addEventListener('keypress', (key) => {
+  //   console.log(key, 'YEA>?');
+  // })
+  
+  
   
   export default function Slideshow() {
     // eslint-disable-next-line no-shadow
+    
     const [state, dispatch] = useReducer((state, action) => {
       switch (action.type) {
         case 'PROGRESS':
         case 'NEXT': return {
           ...state,
           isPlaying: action.type === 'PROGRESS',
-          takeFocus: false,
+          // takeFocus: false,
           currentIndex: (state.currentIndex + 1) % state.slides.length,
         };
         case 'PREV': return {
           ...state,
           isPlaying: false,
-          takeFocus: false,
+          // takeFocus: false,
           currentIndex: (state.currentIndex - 1 + state.slides.length) % state.slides.length,
         };
         case 'PLAY': return {
           ...state,
-          takeFocus: false,
+          // takeFocus: false,
           isPlaying: true,
         };
         case 'PAUSE': return {
           ...state,
-          takeFocus: false,
+          takeFocus: true,
           isPlaying: false,
         };
         case 'GOTO': return {
           ...state,
-          takeFocus: true,
+          // takeFocus: true,
           currentIndex: action.index,
         };
         case 'FETCH_SUCCESS': return {
@@ -203,9 +208,22 @@ import React, {
       slides: ['empty'],
       loading: true,
       isPlaying: false,
-      takeFocus: false,
+      takeFocus: true,
       start: false,
     });
+
+    document.onkeydown = function(evt) {
+      evt = evt || window.event;
+      var isEscape = false;
+      if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc");
+      } else {
+          isEscape = (evt.keyCode === 27);
+      }
+      if (isEscape) {
+          dispatch({type: 'PAUSE'})
+      }
+    };
   
     useEffect(() => {
       if (!state.loading && state.currentIndex === state.slides.length - 1) {
@@ -236,7 +254,7 @@ import React, {
       }
       return () => { clearTimeout(timeout); };
     }, [state.currentIndex, state.isPlaying]);
-  
+    
     return (
       state.loading
         ? (
@@ -296,7 +314,10 @@ import React, {
                           <IconButton
                             name='Pause'
                             aria-label='Pause'
-                            onClick={() => { dispatch({ type: 'PAUSE' }); }}
+                            onClick={() => { 
+                              // document.webkitExitFullscreen()
+                              dispatch({ type: 'PAUSE' }); 
+                            }}
                           >
                             <FaPause />
                           </IconButton>
@@ -306,7 +327,12 @@ import React, {
                             name='Play'
                             aria-label='Play'
                             onClick={() => {
-                              dispatch({ type: 'PLAY' });
+                              if (!document.fullscreenElement) {
+                                
+                                document.getElementById("carousel").requestFullscreen();
+                              }
+                              dispatch({ 
+                                type: 'PLAY' });
                             }}
                           >
                             <FaPlay />

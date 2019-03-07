@@ -5,7 +5,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import DemoButton from './DemoButton';
+// import DemoButton from './DemoButton';
+import { Link } from 'react-router-dom'
 
 const styles = theme => ({
     root: {
@@ -29,6 +30,8 @@ const styles = theme => ({
         display: 'none'
       },
     },
+    link: { textDecoration: 'none', color: 'white' 
+    },
   });
 
 function SimpleAppBar(props) {
@@ -39,13 +42,17 @@ function SimpleAppBar(props) {
       <AppBar position="static" color="primary">
         <Toolbar>
             <Grid container spacing={0}>
+           
+            
                 <Grid item xs={12}>
+                <Link to='/' className={classes.link}>
                     <Typography variant="h4" color="inherit" className={classes.nameLarge}>
                         Chance The Trainer
                     </Typography>
                     <Typography variant="subtitle2" color="inherit" className={classes.nameSmall}>
                         Chance The Trainer sm
                     </Typography>
+                    </Link>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="h6" color="inherit" className={classes.nameLarge}>
@@ -55,10 +62,11 @@ function SimpleAppBar(props) {
                         by: ajDevs sm
                     </Typography>
                 </Grid>
+                
             </Grid>
-            <div className={classes.demoButton}>
+            {/* <div className={classes.demoButton}>
               <DemoButton />
-            </ div>
+            </ div> */}
            
         </Toolbar>
       </AppBar>

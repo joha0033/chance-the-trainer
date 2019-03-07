@@ -1,0 +1,116 @@
+[aria-hidden="true"] { 
+    display: none; 
+  }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  ul, h2 {
+    padding:0; 
+    margin: 0;
+    align-items: center;
+  }
+  
+  .Slide {
+    padding: 5vw;
+
+    height: 100vmax;
+    width: 100vmax;
+    background-size:     contain;                
+    background-repeat:   no-repeat;
+    background-position: top center;
+  }
+  
+  .SlideContent{
+    display:inline-block;
+    border-radius: 2vw;
+    padding: 3vw;
+    background: rgba(0, 0, 0, 0.65);
+    font-size: medium;
+    text-align: left;
+  }
+
+  .Title {
+    padding-bottom:2%;
+  }
+  
+  .Controls {
+    position: absolute;
+    display: flex;
+    padding: 5vw;
+    right: 2vw;
+    top: 3vw;
+  }
+  
+  .SlideNav {
+    position: absolute;
+    display: flex;
+    padding: 5vw;
+    left: 2vw;
+    top: 3vw;
+  }
+  
+  .IconButton {
+    background:none;
+    border: none;
+    opacity: .9;
+    font-size: 1rem;
+    color: rgb(199, 184, 184);
+  }
+  
+  .IconButtonLarge{
+    position: absolute;
+    background:none;
+    border: none;
+    opacity: .9;
+    font-size: 8rem;
+    color: rgb(199, 184, 184);
+    right: 40vw;
+    top: 40vh;
+  }
+  
+  .PlayAgain{
+    align-items: center;
+  }
+  
+  .Loading{
+    background:none;
+    align-items: center;
+    opacity: .9;
+    font-size: 8rem;
+    color: rgb(199, 184, 184);
+    margin-left: 2vw;
+  }
+  
+  .SlideNavItemOff {
+    background:none;
+    border: none;
+    opacity: .6;
+    font-size: 1rem;
+    color: rgb(199, 184, 184);
+  }
+  
+  .SlideNavItemOn {
+    background:none;
+    border: none;
+    opacity: 1;
+    font-size: 2rem;
+    color: rgb(199, 184, 184);
+  }
+  
+  .ProgressBar {
+    position: absolute;
+    display: flex;
+    height: 3%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .ProgressBarContainer{
+    opacity: .8;
+    background-color: rgb(199, 184, 184);
+  }
+  
+  

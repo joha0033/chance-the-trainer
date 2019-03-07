@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
     root: {
@@ -23,18 +23,18 @@ const styles = theme => ({
 
 
 const DemoButton = (props) => {
-    const { classes } = props;
+    // const { classes } = props;
     const [isDemoDisplayed, setIsDemoDisplayed] = useState(false)
 
-    const handleClick = () => {
-        setIsDemoDisplayed(!isDemoDisplayed)
-    }
+    // const handleClick = () => {
+    //     setIsDemoDisplayed(!isDemoDisplayed)
+    // }
 
     return (
         <div className='ProgressBar'>
             <div >
                 <label>
-                    <Button 
+                    {/* <Button 
                         aria-label="Demo" 
                         className={classes.button}
                         onClick={() => handleClick()}
@@ -43,7 +43,7 @@ const DemoButton = (props) => {
                             burst_mode
                         </i>
                         {isDemoDisplayed ? 'Hide Demo' : 'Show Demo'}
-                    </Button>
+                    </Button> */}
                     
                 </label>
                 

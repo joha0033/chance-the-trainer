@@ -22,12 +22,15 @@ function Home(props) {
   const elevation = width === 'xs' ? 0 : 5
   
   return (
-        <Paper  className={classes.root} elevation={elevation}>
+    <div>
+      <Paper  className={classes.root} elevation={elevation}>
           <Typography component="h4" >
             <HowToList />
             <GetStartedButton />
           </Typography>
         </Paper>
+    </div>
+        
   );
 }
 

@@ -6,31 +6,3 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
-
-.slide-appear {
-  opacity    : 0;
-  transition : opacity 2s ease;
-}
-
-.slide-appear.slide-appear-active {
-  opacity : 1;
-}
-
-.slide-enter {
-  margin-right : 0;
-  transition : all .3s ease;
-}
-
-.slide-enter.slide-enter-active {
-  margin-right : 500px;
-}
-
-.slide-leave {
-  margin-right : 500px;
-  transition : all .3s ease;
-}
-
-.slide-leave.slide-leave-active {
-  margin-right : 0;
-}
-

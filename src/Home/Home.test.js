@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import {render, fireEvent, cleanup, text} from 'react-testing-library';
-
+// import router
 import Home from './Home';
 import HowToList from './HowToList'
 import GetStartedButton from './GetStartedButton'
@@ -93,8 +93,8 @@ it('renders get started button correctly', () => {
     .create(<Home  {...propXS} />)
     .toJSON()
     
-  expect(componentSmall.props.className.includes('MuiPaper-elevation0-224')).toBeTruthy();
-  expect(componentLarge.props.className.includes('MuiPaper-elevation5-229')).toBeTruthy();
+  expect(componentSmall.children[0].props.className.includes('MuiPaper-elevation0-224')).toBeTruthy();
+  expect(componentLarge.children[0].props.className.includes('MuiPaper-elevation5-229')).toBeTruthy();
 
 });
  /**
