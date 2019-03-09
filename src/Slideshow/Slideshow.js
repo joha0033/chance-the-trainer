@@ -19,7 +19,11 @@ import React, {
     slide,
   }) {
     const ref = useRef();
+    console.log(ref.current, 'ref!');
+    
     useEffect(() => {
+      console.log(takeFocus, 'takeFocus in useEffect!');
+      console.log(ref.current, 'ref in useEffect!');
       if (isCurrent && takeFocus) {
         ref.current.focus();
       }
@@ -181,7 +185,7 @@ import React, {
         };
         case 'GOTO': return {
           ...state,
-          // takeFocus: true,
+          takeFocus: true,
           currentIndex: action.index,
         };
         case 'FETCH_SUCCESS': return {
@@ -208,22 +212,36 @@ import React, {
       slides: ['empty'],
       loading: true,
       isPlaying: false,
-      takeFocus: true,
+      takeFocus: false,
       start: false,
     });
-
-    document.onkeydown = function(evt) {
-      evt = evt || window.event;
-      var isEscape = false;
-      if ("key" in evt) {
-          isEscape = (evt.key === "Escape" || evt.key === "Esc");
-      } else {
-          isEscape = (evt.keyCode === 27);
+    document.addEventListener("fullscreenchange", function(event) {
+      if (document.fullscreenElement) {
+        console.log('FULL');
+        console.log(state.takeFocus);
+        
+      }else{
+        console.log('NOT FULL');
+        console.log(state.takeFocus);
+        dispatch({ type: 'GOTO', index: state.currentIndex });
+        
       }
-      if (isEscape) {
-          dispatch({type: 'PAUSE'})
-      }
-    };
+    });
+    
+    // document.onkeydown = function(evt) {
+    //   evt = evt || window.event;
+    //   console.log('esc hit!');
+      
+    //   var isEscape = false;
+    //   if ("key" in evt) {
+    //       isEscape = (evt.key === "Escape" || evt.key === "Esc");
+    //   } else {
+    //       isEscape = (evt.keyCode === 27);
+    //   }
+    //   if (isEscape) {
+    //       dispatch({type: 'PAUSE'})
+    //   }
+    // };
   
     useEffect(() => {
       if (!state.loading && state.currentIndex === state.slides.length - 1) {
@@ -234,7 +252,7 @@ import React, {
     }, [state.currentIndex]);
   
     const fetchSlides = async () => {
-      const response = await fetch('https://photo-api-2019.herokuapp.com/images/array_of/3/')
+      const response = await fetch(process.env.REACT_APP_URL_FOR_IMAGES_ARRAY)
         .then(res => res.json())
         .then((data) => {
           dispatch({ type: 'FETCH_SUCCESS', slides: data.images });
